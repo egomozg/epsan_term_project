@@ -24,9 +24,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="2.9505836"
-     inkscape:cx="360.77609"
-     inkscape:cy="346.54161"
+     inkscape:zoom="2.0863777"
+     inkscape:cx="343.89747"
+     inkscape:cy="342.93887"
      inkscape:window-width="2560"
      inkscape:window-height="1361"
      inkscape:window-x="-9"
@@ -1159,5 +1159,16 @@
          style="stroke-width:0.264583"
          x="112.03766"
          y="113.90997">5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:4.23333px;line-height:1.25;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';stroke-width:0.264583"
+       x="81.866882"
+       y="48.049164"
+       id="text27959"><tspan
+         sodipodi:role="line"
+         id="tspan27957"
+         style="stroke-width:0.264583"
+         x="81.866882"
+         y="48.049164">Масштаб 1 клетка : 10 км</tspan></text>
   </g>
 </svg>
