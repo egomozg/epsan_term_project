@@ -24,9 +24,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.4752919"
-     inkscape:cx="286.72292"
-     inkscape:cy="356.87853"
+     inkscape:zoom="2.9505838"
+     inkscape:cx="378.90807"
+     inkscape:cy="305.19384"
      inkscape:window-width="2560"
      inkscape:window-height="1361"
      inkscape:window-x="-9"
@@ -578,11 +578,19 @@
        id="path398-8-9" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 136.33849,132.0877 1.96247,-1.07606"
-       id="path664-2" />
+       d="m 143.11037,144.88142 1.58517,0.98282"
+       id="path398-9-9-0" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 136.79924,132.99049 1.96247,-1.07606"
+       d="m 143.63086,143.88163 1.58518,0.98281"
+       id="path398-8-9-8" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.295857px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 136.38242,132.0714 1.7623,-1.62814"
+       id="path664-2" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.295857px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 137.0285,133.08332 1.7623,-1.62814"
        id="path664-6-8" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -636,5 +644,13 @@
          x="117.12868"
          y="125.24465"
          id="tspan1285-9">г)</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.295857px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 142.82558,155.78291 1.7623,-1.62814"
+       id="path664-2-2" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.295857px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 143.47166,156.79483 1.7623,-1.62814"
+       id="path664-6-8-0" />
   </g>
 </svg>
