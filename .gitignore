@@ -42,3 +42,4 @@ utils/install.fish
 utils/install.sh
 build
 calculations/.ipynb_checkpoints
+*.rg2
