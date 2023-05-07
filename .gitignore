@@ -43,3 +43,4 @@ utils/install.sh
 build
 calculations/.ipynb_checkpoints
 *.rg2
+*.anc
