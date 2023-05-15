@@ -123,12 +123,12 @@
 
 В первой и втором варианте схемы отличается класс уровня напряжения трансформатора (ТРДН-63000/220 и ТРДН-63000/110 соответственно), установленные на ПС2. Капиталовложения для каждой пары ячеек трансформаторов рассчитываются по формуле:
 	\begin{equation*}
-		\textup{К}_\textup{ТР} = \textup{К}_\textup{тр.баз}\cdot \textup{К}\cdot k_\textup{зон}\cdot k_\textup{деф}\cdot n_\textup{т},
+		\textup{К}_\textup{ТР} = \textup{К}_\textup{тр.баз}\cdot k_\textup{зон}\cdot k_\textup{деф}\cdot n_\textup{т},
 	\end{equation*}
 где \(\textup{К}_\textup{тр.баз}\) "--- базовый укрупненный показатель стоимости ячейки автотрансформаторов, тыс. руб; \(n_\textup{т}\) "--- число трансформаторов, установленных на ПС.
 
-\[\textup{К}_\textup{ТР2(1)} = \textup{К}_\textup{тр.баз.220}\cdot \textup{К}\cdot k_\textup{зон}\cdot k_\textup{деф}\cdot n_\textup{т} = 12625\cdot 1\cdot 4,25\cdot 2 = 107312,5\; \textup{тыс. руб}\]
-\[\textup{К}_\textup{ТР2(2)} = \textup{К}_\textup{тр.баз.110}\cdot \textup{К}\cdot k_\textup{зон}\cdot k_\textup{деф}\cdot n_\textup{т} = 10975\cdot 1\cdot 4,25\cdot 2 = 93287,5\; \textup{тыс. руб}\]
+\[\textup{К}_\textup{ТР2(1)} = \textup{К}_\textup{тр.баз.220}\cdot k_\textup{зон}\cdot k_\textup{деф}\cdot n_\textup{т} = 12625\cdot 1\cdot 4,25\cdot 2 = 107312,5\; \textup{тыс. руб}\]
+\[\textup{К}_\textup{ТР2(2)} = \textup{К}_\textup{тр.баз.110}\cdot k_\textup{зон}\cdot k_\textup{деф}\cdot n_\textup{т} = 9000\cdot 1\cdot 4,25\cdot 2 = 76500,0\; \textup{тыс. руб}\]
 
 \textit{Схемы РУ}
 
@@ -148,10 +148,10 @@
 
 \textit{Дополнительное оборудование}
 
-В первом варианте схемы сети предполагается установка 8 БСК на ПС2, а во втором варианте схемы сети 4 БСК. Дополнительные капиталовложения в дополнительное оборудование для варианта схемы сети 2:
-\[\textup{К}_\textup{доп(1)} = \textup{К}_\textup{БСК.баз}\cdot k_\textup{зон}\cdot k_\textup{деф}\cdot (n_\textup{БСК1} - n_\textup{БСК2})\]
+В первом варианте схемы сети предполагается установка 8 БСК на ПС2, а во втором варианте схемы сети 10 БСК. Дополнительные капиталовложения в дополнительное оборудование для варианта схемы сети 2:
+\[\textup{К}_\textup{доп2(2)} = \textup{К}_\textup{БСК.баз}\cdot k_\textup{зон}\cdot k_\textup{деф}\cdot (n_\textup{БСК1} - n_\textup{БСК2})\]
 где \(\textup{К}_\textup{БСК.баз}\) "--- укрупненная стоимость шунтовой конденсаторной батареи 10 кВ единичной мощностью 1,2 МВар; \(n_\textup{БСК1}\) "--- общее число КУ, установленных в 1 варианте схемы сети; \(n_\textup{БСК2}\) "--- общее число КУ, установленных во 2 варианте схемы сети.
-\[\textup{К}_\textup{доп2(1)} = \textup{К}_\textup{БСК.баз}\cdot k_\textup{зон}\cdot k_\textup{деф}\cdot (n_\textup{БСК1} - n_\textup{БСК2}) = 375\cdot 425\cdot (8-4) = 6375\; \textup{тыс. руб}\]
+\[\textup{К}_\textup{доп2(2)} = \textup{К}_\textup{БСК.баз}\cdot k_\textup{зон}\cdot k_\textup{деф}\cdot (n_\textup{БСК1} - n_\textup{БСК2}) = 375\cdot 425\cdot (10-8) = 3187,5\; \textup{тыс. руб}\]
 
 Для остальных ПС с различной стоимостью составляющих в двух вариантах схемы сети расчет проводится аналогично. Результаты расчетов различной стоимости ПС вместе с капиталовложениями в ЛЭП сведем в табл. \ref{tab:сравнение_схем}.
 
@@ -170,7 +170,7 @@
 		\endfoot
 		\endlastfoot
 		\hline
-		Схема & Линия & \(\textup{К}_{0\textup{ЛЭП.баз}}\), тыс. руб & \(\textup{К}_\textup{ЛЭП}\), тыс. руб & \(\textup{К}_{\textup{ЛЭП}\Sigma}\), тыс. руб \\ \hline
+		Вариант & Линия & \(\textup{К}_{0\textup{ЛЭП.баз}}\), тыс. руб/км & \(\textup{К}_\textup{ЛЭП}\), тыс. руб & \(\textup{К}_{\textup{ЛЭП}\Sigma}\), тыс. руб \\ \hline
 		\multirow{4}{*}{№ 1} & К-1 & 1188 & 211048,2 & \multirow{4}{*}{842348,5} \\ \cline{2-4}
 		                     & К-2 & 1188 & 248419,8 &                           \\ \cline{2-4}
 		                     & 1-3 & 990  & 207009,0 &                           \\ \cline{2-4}
@@ -179,52 +179,52 @@
 		                     & 1-3 & 2020 & 422382,0 &                           \\ \cline{2-4}
 		                     & 2-3 & 1403 & 249243,0 &                           \\ \hline
 		 \multicolumn{5}{|c|}{ПС2} \\ \hline
-		 Схема & \multicolumn{2}{c|}{Тип ТР} & \(\textup{К}_\textup{тр.баз}\), тыс. руб & \(\textup{К}_\textup{ТР.2}\), тыс. руб \\ \hline
+		 Вариант & \multicolumn{2}{c|}{Тип ТР} & \(\textup{К}_\textup{тр.баз}\), тыс. руб & \(\textup{К}_\textup{ТР.2}\), тыс. руб \\ \hline
 		 № 1 & \multicolumn{2}{c|}{ТРДН-63000/220} & 12625 & 107312,5 \\ \hline
-		 № 2 & \multicolumn{2}{c|}{ТРДН-63000/110} & 10975 & 93287,5  \\ \hline
+		 № 2 & \multicolumn{2}{c|}{ТРДН-63000/110} & 9000  & 76500,0  \\ \hline
 		 \multicolumn{5}{|c|}{РУВН ПС2} \\ \hline
-		 Схема & \multicolumn{2}{c|}{\(n_\textup{яч}\)} & \(\textup{К}_\textup{выкл. баз}\), тыс. руб & \(\textup{К}_\textup{РУВН2}\), тыс. руб \\ \hline
+		 Вариант & \multicolumn{2}{c|}{\(n_\textup{яч}\)} & \(\textup{К}_\textup{выкл. баз}\), тыс. руб & \(\textup{К}_\textup{РУВН2}\), тыс. руб \\ \hline
 		 № 1 & \multicolumn{2}{c|}{4} & 8800 & 149600 \\ \hline
 		 № 2 & \multicolumn{2}{c|}{3} & 4150 & 52912,5 \\ \hline
 		 \multicolumn{5}{|c|}{Дополнительное оборудование ПС2} \\ \hline
-		 Схема & \multicolumn{2}{c|}{\(N_\textup{БСК}\)} & \(\textup{К}_\textup{БСК.баз}\), тыс. руб & \(\textup{К}_\textup{доп2(1)}\), тыс. руб \\ \hline
-		 № 1 & \multicolumn{2}{c|}{8} & 375 & 6375 \\ \hline
-		 № 2 & \multicolumn{2}{c|}{4} & 375 & - \\ \hline
-		 \multicolumn{5}{|c|}{Постоянная часть затрат на сооружение ПС2} \\ \hline
-		 \multicolumn{3}{|c|}{Схема РУВН (ВН/НН)} & \(\textup{К}_\textup{пост.баз}\), тыс. руб & \(\textup{К}_\textup{пост2}\), тыс. руб. \\ \hline
-		 \multicolumn{3}{|c|}{Четырехугольник (220/10)} & 19500 & 82875 \\ \hline
-		 \multicolumn{3}{|c|}{Мостик (110/10)} & 9000 & 38250 \\ \hline
+		 Вариант & \multicolumn{2}{c|}{\(N_\textup{БСК}\)} & \(\textup{К}_\textup{БСК.баз}\), тыс. руб & \(\textup{К}_\textup{доп2(2)}\), тыс. руб \\ \hline
+		 № 1 & \multicolumn{2}{c|}{8} & 375 & - \\ \hline
+		 № 2 & \multicolumn{2}{c|}{10} & 375 & 3187,5 \\ \hline
+		 \multicolumn{5}{c|}{Постоянная часть затрат на сооружение ПС2} \\ \hline
+		 Вариант & \multicolumn{2}{c|}{Схема РУВН (ВН/НН)} & \(\textup{К}_\textup{пост.баз}\), тыс. руб & \(\textup{К}_\textup{пост2}\), тыс. руб. \\ \hline
+		 № 1 & \multicolumn{2}{c|}{Четырехугольник (220/10)} & 19500 & 82875 \\ \hline
+		 № 2 & \multicolumn{2}{c|}{Мостик (110/10)} & 9000 & 38250 \\ \hline
 		 \multicolumn{5}{|c|}{ПС3} \\ \hline
-		 Схема & \multicolumn{2}{c|}{Тип ТР} & \(\textup{К}_\textup{тр.баз}\), тыс. руб & \(\textup{К}_\textup{ТР.3}\), тыс. руб \\ \hline
+		 Вариант & \multicolumn{2}{c|}{Тип ТР} & \(\textup{К}_\textup{тр.баз}\), тыс. руб & \(\textup{К}_\textup{ТР.3}\), тыс. руб \\ \hline
 		 № 1 & \multicolumn{2}{c|}{АТДЦТН-125000/220/110} & 15525 & 131962,5 \\ \hline
 		 № 2 & \multicolumn{2}{c|}{АТДЦТН-200000/220/110} & 21050 & 178925,0 \\ \hline
-		 \multicolumn{5}{|c|}{Дополнительно оборудование ПС3} \\ \hline
-		 Схема & \multicolumn{2}{c|}{\(N_\textup{БСК}\)} & \(\textup{К}_\textup{БСК.баз}\), тыс. руб & \(\textup{К}_\textup{доп3(2)}\), тыс. руб \\ \hline
-		 № 1 & \multicolumn{2}{c|}{4} & 375 & - \\ \hline
-		 № 2 & \multicolumn{2}{c|}{4} & 375 & 9562,5 \\ \hline
-		 \multicolumn{5}{|c|}{РУВН ПС3} \\ \hline
-		 Схема & \multicolumn{2}{c|}{\(n_\textup{яч}\)} & \(\textup{К}_\textup{выкл. баз}\), тыс. руб & \(\textup{К}_\textup{РУВН3(2)}\), тыс. руб \\ \hline
-		 № 1 & \multicolumn{2}{c|}{4} & 4150 & - \\ \hline
-		 № 2 & \multicolumn{2}{c|}{3} & 4150 & 35275 \\ \hline
+		 \multicolumn{5}{|c|}{РУCН ПС3} \\ \hline
+		 Вариант & \multicolumn{2}{c|}{\(n_\textup{яч}^{110}\)} & \(\textup{К}_\textup{выкл. баз}\), тыс. руб & \(\textup{К}_\textup{РУСН3(2)}\), тыс. руб \\ \hline
+		 № 1 & \multicolumn{2}{c|}{7} & 4150 & - \\ \hline
+		 № 2 & \multicolumn{2}{c|}{9} & 4150 & 35275 \\ \hline
 		 \multicolumn{5}{|c|}{ПС1} \\ \hline
+		  \multicolumn{5}{|c|}{Постоянная часть затрат на сооружение ПС1} \\ \hline
+		 Вариант & \multicolumn{2}{c|}{Схема РУВН (ВН/НН)} & \(\textup{К}_\textup{пост.баз}\), тыс. руб & \(\textup{К}_\textup{пост1}\), тыс. руб. \\ \hline
+		 № 1 & \multicolumn{2}{c|}{Четырехугольник (220/10)} & 19500 & - \\ \hline
+		 № 2 & \multicolumn{2}{c|}{Сборные шины (220/10)} & 19500 & - \\ \hline
 		 \multicolumn{5}{|c|}{Дополнительное оборудование ПС1} \\ \hline
-		 Схема & \multicolumn{2}{c|}{\(N_\textup{БСК}\)} & \(\textup{К}_\textup{БСК.баз}\), тыс. руб & \(\textup{К}_\textup{доп1(2)}\), тыс. руб \\ \hline
+		 Вариант & \multicolumn{2}{c|}{\(N_\textup{БСК}\)} & \(\textup{К}_\textup{БСК.баз}\), тыс. руб & \(\textup{К}_\textup{доп1(2)}\), тыс. руб \\ \hline
 		 № 1 & \multicolumn{2}{c|}{8} & 375 & - \\ \hline
 		 № 2 & \multicolumn{2}{c|}{10} & 375 & 3187,5 \\ \hline
 		 \multicolumn{5}{|c|}{ПС4} \\ \hline
 		 \multicolumn{5}{|c|}{Дополнительное оборудование ПС4} \\ \hline
-		 Схема & \multicolumn{2}{c|}{\(N_\textup{БСК}\)} & \(\textup{К}_\textup{БСК.баз}\), тыс. руб & \(\textup{К}_\textup{доп4(2)}\), тыс. руб \\ \hline
+		 Вариант & \multicolumn{2}{c|}{\(N_\textup{БСК}\)} & \(\textup{К}_\textup{БСК.баз}\), тыс. руб & \(\textup{К}_\textup{доп4(2)}\), тыс. руб \\ \hline
 		 № 1 & \multicolumn{2}{c|}{8} & 375 & - \\ \hline
 		 № 2 & \multicolumn{2}{c|}{10} & 375 & 3187,5 \\ \hline
 		 \multicolumn{5}{|c|}{ПС5} \\ \hline
 		 \multicolumn{5}{|c|}{Дополнительное оборудование ПС5} \\ \hline
-		 Схема & \multicolumn{2}{c|}{\(N_\textup{БСК}\)} & \(\textup{К}_\textup{БСК.баз}\), тыс. руб & \(\textup{К}_\textup{доп5(1)}\), тыс. руб \\ \hline
+		 Вариант & \multicolumn{2}{c|}{\(N_\textup{БСК}\)} & \(\textup{К}_\textup{БСК.баз}\), тыс. руб & \(\textup{К}_\textup{доп5(1)}\), тыс. руб \\ \hline
 		 № 1 & \multicolumn{2}{c|}{8} & 375 & 3187,5 \\ \hline
 		 № 2 & \multicolumn{2}{c|}{6} & 375 & - \\ \hline
 		 \multicolumn{5}{|c|}{Итого} \\ \hline
-		 Схема & \multicolumn{2}{c|}{\(\textup{К}_{\textup{ЛЭП}\Sigma}\), тыс. руб.} & \(\textup{К}_{\textup{ПС.220}\Sigma}\), тыс. руб & \(\textup{К}_{\textup{ПС.110}\Sigma}\), тыс. руб \\ \hline
-		 № 1 & \multicolumn{2}{c|}{842348,5} & 471750 & 9562,5 \\ \hline
-		 № 2 & \multicolumn{2}{c|}{1065830,3} & 267112,5 & 147475,0 \\ \hline
+		 Вариант & \multicolumn{2}{c|}{\(\textup{К}_{\textup{ЛЭП}\Sigma}\), тыс. руб.} & \(\textup{К}_{\textup{ПС.220}\Sigma}\), тыс. руб & \(\textup{К}_{\textup{ПС.110}\Sigma}\), тыс. руб \\ \hline
+		 № 1 & \multicolumn{2}{c|}{842348,5} & 471750,0 & 3187,5 \\ \hline
+		 № 2 & \multicolumn{2}{c|}{1065830,3} & 178925,0 & 212500,0 \\ \hline
 	\end{xltabular}
 }
 %\end{table}
@@ -232,7 +232,7 @@
 \textit{Издержки на возмещение потерь электроэнергии}
 
 Приведем пример расчета нагрузочных потерь активной мощности для линии К-1 схемы:
-\[\Delta P_{K-1} = \frac{S_{K-1}^2\cdot R_{K-1}}{U_\textup{ном}:2} = \frac{134,9^2\cdot 3,05}{220^2} = 1,15\; \textup{МВт}\]
+\[\Delta P_{K-1} = \frac{S_{K-1}^2\cdot R_{K-1}}{U_\textup{ном}^2} = \frac{134,9^2\cdot 3,05}{220^2} = 1,15\; \textup{МВт}\]
 
 Расчет для других линий вариантов схемы сети 1 и 2 проведен аналогично. Результаты расчета сведены в таблицы \ref{tab:нагр_потери_1} и \ref{tab:нагр_потери_2}.
 
@@ -243,7 +243,7 @@
 	\begin{tabularx}{\linewidth}{|Z|Z|Z|Z|Z|Z|Z|Z|}
 		\hline
 		Линия                           & К-1   & К-2   & 1-3  & 2-3  & 3-4  & 4-5  & Итого \\ \hline
-		S, МВА                          & 134,9 & 129,0 & 60,3 & 54,4 & 80,2 & 37,7 &  -    \\ \hline
+		\textit{S}, МВА                          & 134,9 & 129,0 & 60,3 & 54,4 & 80,2 & 37,7 &  -    \\ \hline
 		\(R_\textup{л}\), Ом            & 3,05  & 3,59  & 5,81 & 4,93 & 1,53 & 3,16 &  -    \\ \hline
 		\(\Delta P_\textup{л(1)}\), МВт & 1,15  & 1,23  & 0,44 & 0,30 & 0,81 & 0,37 & 4,30  \\ \hline
 	\end{tabularx}
@@ -256,7 +256,7 @@
 	\begin{tabularx}{\linewidth}{|Z|Z|Z|Z|Z|Z|Z|}
 		\hline
 		Линия                           & К-1   & 1-3   & 3-2  & 3-4  & 4-5  & Итого \\ \hline
-		S, МВА                          & 262,5 & 188,7 & 73,9 & 78,6 & 36,9 &  -    \\ \hline
+		\textit{S}, МВА                          & 262,5 & 188,7 & 73,9 & 78,6 & 36,9 &  -    \\ \hline
 		\(R_\textup{л}\), Ом            & 1,53  & 2,36  & 2,47 & 1,53 & 3,16 &  -    \\ \hline
 		\(\Delta P_\textup{л(1)}\), МВт & 2,18  & 1,73  & 1,11 & 0,78 & 0,36 & 6,17  \\ \hline
 	\end{tabularx}
@@ -265,8 +265,8 @@
 В соответствии с исходными данными время наибольших нагрузок \(T_\textup{нб} = 4350\; \frac{\textup{ч}}{\textup{год}}\). Тогда время наибольших потерь:
 \[\tau = \frac{1}{3}\cdot T_\textup{нб} + \frac{2}{3}\cdot \frac{T_\textup{нб}^2}{8760} = \frac{1}{3}\cdot 4350 + \frac{2}{3}\cdot \frac{4350^2}{8760} = 2890,1\; \frac{\textup{ч}}{\textup{год}}\]
 
-Рассчитаем нагрузочные потери активной мощности в трансформаторах: 2xТРДН-63000/220 для варианта схемы сети 2 и 2xТРДН-63000/110 для варианта схемы сети 2, установленных на ПС2 (с учетом компенсации реактивной мощности):
-\[\Delta P_\textup{Т2(1)} = \frac{S_\textup{нб2}^{''2}\cdot R_\textup{Т2(1)}}{U_\textup{ном}^2\cdot n_\textup{т}} = \frac{72,9^2\cdot 3,4}{220^2\cdot 2} = 0,187\; \textup{МВт};\]
+Рассчитаем нагрузочные потери активной мощности в трансформаторах: 2xТРДН-63000/220 для варианта схемы сети 1 и 2xТРДН-63000/110 для варианта схемы сети 2, установленных на ПС2 (с учетом компенсации реактивной мощности):
+\[\Delta P_\textup{Т2(1)} = \frac{S_\textup{нб2}^{''2}\cdot R_\textup{Т2(1)}}{U_\textup{ном}^2\cdot n_\textup{т}} = \frac{72,9^2\cdot 3,9}{220^2\cdot 2} = 0,214\; \textup{МВт};\]
 \[\Delta P_\textup{Т2(2)} = \frac{S_\textup{нб2}^{''2}\cdot R_\textup{Т2(2)}}{U_\textup{ном}^2\cdot n_\textup{т}} = \frac{72,2^2\cdot 0,87}{110^2\cdot 2} = 0,187\; \textup{МВт},\]
 где \(R_\textup{т(1)}\) и \(R_\textup{т(2)}\) "--- активные сопротивления обмоток трансформаторов ТРДН-63000/220 и ТРДН-63000/110 соответственно.
 
@@ -285,22 +285,22 @@
 \[\Delta P_\textup{ат(2)} = \Delta P_\textup{ат3(2)ВН} + \Delta P_\textup{ат3(2)CН} + \Delta P_\textup{ат3(2)НН} =\] \[=0,105 + 0,0720 + 0,0061 = 0,183\; \textup{МВт}\]
 
 Суммарные годовые нагрузочные потери электроэнергии для вариантов схемы сети 1 и 2:
-\[\Delta \textup{Э}_\textup{нагр(1)} = \Delta P_{(1)}\cdot \tau = (\Delta P_\textup{л(1)} + \Delta P_\textup{Т2(1)} + \Delta P_\textup{ат(1)})\cdot \tau =\] \[= (4,30 + 0,187 + 0,107)\cdot 2890,1 = 13277,1\; \frac{\textup{МВт}\cdot \textup{ч}}{\textup{год}}\]
+\[\Delta \textup{Э}_\textup{нагр(1)} = \Delta P_{(1)}\cdot \tau = (\Delta P_\textup{л(1)} + \Delta P_\textup{Т2(1)} + \Delta P_\textup{ат(1)})\cdot \tau =\] \[= (4,30 + 0,214 + 0,107)\cdot 2890,1 = 13355,2\; \frac{\textup{МВт}\cdot \textup{ч}}{\textup{год}}\]
 \[\Delta \textup{Э}_\textup{нагр(2)} = \Delta P_{(2)}\cdot \tau = (\Delta P_\textup{л(2)} + \Delta P_\textup{Т2(2)} + \Delta P_\textup{ат(2)})\cdot \tau =\] \[= (6,17 + 0,187 + 0,183)\cdot 2890,1 = 18901,3\; \frac{\textup{МВт}\cdot \textup{ч}}{\textup{год}}\]
 
 \textit{Условно-постоянные потери активной мощности}
 
 Разница между схемами сети 1 и 2 будет состоять в потерях в стали силовых ТР на ПС3 и ПС2, так как там разные ТР. Величина условно постоянных потерь для вариантов схемы сети 1 и 2 будет определяться:
-\[\Delta P_\textup{усл.пост(1)} = \Delta P_\textup{х.экв.тр2(1)} + \Delta P_\textup{х.экв.ат3(1)} = 70\cdot 2 + 85\cdot 2 = 310\; \textup{кВт} = 0,31\; \textup{МВт};\]
-\[\Delta P_\textup{усл.пост(2)} = \Delta P_\textup{х.экв.тр2(2)} + \Delta P_\textup{х.экв.ат3(2)} = 70\cdot 2 + 85\cdot 2 = 310\; \textup{кВт} = 0,31\; \textup{МВт},\]
-где \(\Delta P_\textup{х.экв.тр2(1)}\) и \(\Delta P_\textup{х.экв.тр2(2)}\) "--- каталожные данные по потерям холостого хода трансформаторов ТРДН-63000/220 и ТРДН-63000/110 соответственно; \(\Delta P_\textup{х.экв.тр2(2)}\) и \(\Delta P_\textup{х.экв.ат3(2)}\) "--- каталожные данные по потерям холостого хода автотрансформаторов АТДЦТН-125000/220/110 и АТДЦТН-200000/220/110 соответственно, приведенные в справочнике \cite{файбисович}.
+\[\Delta P_\textup{усл.пост(1)} = \Delta P_\textup{х.экв.тр2(1)} + \Delta P_\textup{х.экв.ат3(1)} = 82\cdot 2 + 85\cdot 2 = 310\; \textup{кВт} = 0,334\; \textup{МВт};\]
+\[\Delta P_\textup{усл.пост(2)} = \Delta P_\textup{х.экв.тр2(2)} + \Delta P_\textup{х.экв.ат3(2)} = 59\cdot 2 + 125\cdot 2 = 310\; \textup{кВт} = 0,368\; \textup{МВт},\]
+где \(\Delta P_\textup{х.экв.тр2(1)}\) и \(\Delta P_\textup{х.экв.тр2(2)}\) "--- каталожные данные по потерям холостого хода трансформаторов ТРДН-63000/220 и ТРДН-63000/110 соответственно; \(\Delta P_\textup{х.экв.ат3(1)}\) и \(\Delta P_\textup{х.экв.ат3(2)}\) "--- каталожные данные по потерям холостого хода автотрансформаторов АТДЦТН-125000/220/110 и АТДЦТН-200000/220/110 соответственно, приведенные в справочнике \cite{файбисович}.
 
 Суммарные годовые условно-постоянные потери электроэнергии для вариантов схемы сети 1 и 2:
-\[\Delta \textup{Э}_{\textup{усл.пост(1)}\Sigma} = \Delta P_\textup{усл.пост(1)}\cdot T_\textup{год} = 0,31\cdot 8760 = 2715,6\; \frac{\textup{МВт}\cdot \textup{ч}}{\textup{год}}\]
+\[\Delta \textup{Э}_{\textup{усл.пост(1)}\Sigma} = \Delta P_\textup{усл.пост(1)}\cdot T_\textup{год} = 0,334\cdot 8760 = 2925,8\; \frac{\textup{МВт}\cdot \textup{ч}}{\textup{год}}\]
 \[\Delta \textup{Э}_{\textup{усл.пост(2)}\Sigma} = \Delta P_\textup{усл.пост(2)}\cdot T_\textup{год} = 0,368\cdot 8760 = 3223,7\; \frac{\textup{МВт}\cdot \textup{ч}}{\textup{год}}\]
 
 Суммарные ежегодные потери электроэнергии для вариантов схемы сети 1 и 2:
-\[\Delta \textup{Э}_{(1)\Sigma} = \Delta \textup{Э}_\textup{нагр(1)} + \Delta \textup{Э}_{\textup{усл.пост(1)}\Sigma} = 13277,1 + 2715,6 = 15992,7\; \frac{\textup{МВт}\cdot \textup{ч}}{\textup{год}}\]
+\[\Delta \textup{Э}_{(1)\Sigma} = \Delta \textup{Э}_\textup{нагр(1)} + \Delta \textup{Э}_{\textup{усл.пост(1)}\Sigma} = 13355,2 + 2925,8 = 16281,0\; \frac{\textup{МВт}\cdot \textup{ч}}{\textup{год}}\]
 \[\Delta \textup{Э}_{(2)\Sigma} = \Delta \textup{Э}_\textup{нагр(2)} + \Delta \textup{Э}_{\textup{усл.пост(2)}\Sigma} = 18901,3 + 3223,7 = 22125\; \frac{\textup{МВт}\cdot \textup{ч}}{\textup{год}}\]
 
 Суммарные ежегодные издержки на возмещение потерь электроэнергии в элементах электрической сети:
@@ -308,7 +308,7 @@
 где \(\textup{с}_\textup{э} = 1,75\; \frac{\textup{тыс. руб.}}{\textup{МВт}\cdot \textup{ч}}\) "--- стоимость потерь электроэнергии в Костромской области на 2010 год \cite{глазунов_шведов}.
 
 Рассчитаем суммарные ежегодные издержки на возмещение потерь электроэнергии в элементах электрической сети для двух вариантов схемы сети:
-\[\textup{И}_{\textup{пот}\Sigma(1)} = \textup{с}_\textup{э}\cdot \Delta \textup{Э}_{(1)\Sigma} = 1,75\cdot 15992,7 = 27987,2\; \frac{\textup{тыс. руб}}{\textup{год}}\]
+\[\textup{И}_{\textup{пот}\Sigma(1)} = \textup{с}_\textup{э}\cdot \Delta \textup{Э}_{(1)\Sigma} = 1,75\cdot 16281,0 = 28491,8\; \frac{\textup{тыс. руб}}{\textup{год}}\]
 \[\textup{И}_{\textup{пот}\Sigma(2)} = \textup{с}_\textup{э}\cdot \Delta \textup{Э}_{(2)\Sigma} = 1,75\cdot 22125 = 38718,75\; \frac{\textup{тыс. руб}}{\textup{год}}\]
 
 Определим по таблицам П2.12, П2.14, П2.15 приложения 2 \cite{глазунов_шведов} значения множителей, необходимых для расчета дисконтированных затрат:
@@ -323,13 +323,13 @@
 \[\textup{З}_\textup{д} = \textup{К}_{\Sigma ЛЭП}\cdot D_\textup{р.ЛЭП} + \textup{К}_{\Sigma ПС.110}\cdot D_\textup{р.ПС.110} + \textup{К}_{\Sigma ПС.220}\cdot D_\textup{р.ПС.220} + \textup{И}_{\textup{пот}\Sigma}\cdot D_\textup{д}\]
 
 Величина дисконтированных затрат для вариантов схемы сети 1 и 2:
-\[\textup{З}_\textup{д1} = \textup{К}_{\Sigma ЛЭП(1)}\cdot D_\textup{р.ЛЭП} + \textup{К}_{\Sigma ПС.110(1)}\cdot D_\textup{р.ПС.110} + \textup{К}_{\Sigma ПС.220(1)}\cdot D_\textup{р.ПС.220} + \textup{И}_{\textup{пот(1)}\Sigma}\cdot D_\textup{д} =\] \[= 842348,5\cdot 0,813 + 9562,5\cdot 1,107 + 471750\cdot 1,049 = 1190280,8\; \textup{тыс. руб}\]
-\[\textup{З}_\textup{д2} = \textup{К}_{\Sigma ЛЭП(2)}\cdot D_\textup{р.ЛЭП} + \textup{К}_{\Sigma ПС.110(2)}\cdot D_\textup{р.ПС.110} + \textup{К}_{\Sigma ПС.220(2)}\cdot D_\textup{р.ПС.220} + \textup{И}_{\textup{пот(2)}\Sigma}\cdot D_\textup{д} =\] \[= 1065830,3\cdot 0,813 + 147475,0\cdot 1,107 + 267112,5\cdot 1,049 = 1309975,9\; \textup{тыс. руб}\]
+\[\textup{З}_\textup{д1} = \textup{К}_{\Sigma ЛЭП(1)}\cdot D_\textup{р.ЛЭП} + \textup{К}_{\Sigma ПС.110(1)}\cdot D_\textup{р.ПС.110} + \textup{К}_{\Sigma ПС.220(1)}\cdot D_\textup{р.ПС.220} + \textup{И}_{\textup{пот(1)}\Sigma}\cdot D_\textup{д} =\] \[= 842348,5\cdot 0,813 + 3187,5\cdot 1,107 + 471750\cdot 1,049 + 28491,8\cdot 5,759 = 1347307,9\; \textup{тыс. руб}\]
+\[\textup{З}_\textup{д2} = \textup{К}_{\Sigma ЛЭП(2)}\cdot D_\textup{р.ЛЭП} + \textup{К}_{\Sigma ПС.110(2)}\cdot D_\textup{р.ПС.110} + \textup{К}_{\Sigma ПС.220(2)}\cdot D_\textup{р.ПС.220} + \textup{И}_{\textup{пот(2)}\Sigma}\cdot D_\textup{д} =\] \[= 1065830,3\cdot 0,813 + 212500\cdot 1,107 + 178925\cdot 1,049 + 38718,8\cdot 5,759 = 1512431,4\; \textup{тыс. руб}\]
 
 Разница дисконтированных затрат вариантов схемы сети 1 и 2:
-\[\Delta \textup{З}_\textup{д} = \frac{\textup{З}_\textup{д2} - \textup{З}_\textup{д1}}{\textup{З}_\textup{д2}}\cdot 100\% = \frac{1309975,9 - 1190280,8}{1309975,9}\cdot 100\% = 9,14 \%\]
+\[\Delta \textup{З}_\textup{д} = \frac{\textup{З}_\textup{д2} - \textup{З}_\textup{д1}}{\textup{З}_\textup{д2}}\cdot 100\% = \frac{1512431,4 - 1347307,9}{1512431,4}\cdot 100\% = 10,9 \%\]
 
-Варианты схемы сети 1 и 2 отличаются по дисконтированным затратам на 9,14 \% > 5 "---6 \%, следовательно, схемы экономически не равны. В дальнейшем будем рассматривать схему № 1, так как она является более выгодной.
+Варианты схемы сети 1 и 2 отличаются по дисконтированным затратам на 10,9 \% > 5 \%, следовательно, варианты схем не являются равноэкономичными. В дальнейшем будем рассматривать вариант схемы № 1, так как он более выгодный.
 
 %%% Local Variables:
 %%% mode: latex
