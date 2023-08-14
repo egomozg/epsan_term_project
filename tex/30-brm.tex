@@ -41,7 +41,7 @@
 \end{eqndesc}
 \[
 %\begin{split}
-\Delta Q_{\textup{т}\Sigma} \cong 0,08 \sum_{i=1}^{n} m_{\textup{т}i} \cdot S_{\textup{нб}i} =\] \[= 0,08(1\cdot 75,2 + 1\cdot 75,2 + 1\cdot 32,1 + 2\cdot 43,0 + 2\cdot 37,5) = 27,5\; \textup{МВар}
+\Delta Q_{\textup{т}\Sigma} \cong 0,08 \sum_{i=1}^{5} m_{\textup{т}i} \cdot S_{\textup{нб}i} =\] \[= 0,08(1\cdot 75,2 + 1\cdot 75,2 + 1\cdot 32,1 + 2\cdot 43,0 + 2\cdot 37,5) = 27,5\; \textup{МВар}
 %\end{split}
 \]
 
@@ -136,7 +136,7 @@ Q_{\textup{БСК}i}^{\textup{треб}} = P_{\textup{нб}i}\cdot (\tg\, \varph
 \[Q_{\textup{БСК1}}^{\textup{треб}} = P_{\textup{нб}1}\cdot (\tg\, \varphi_1 - \tg \, \varphi_\textup{б}) = 70 \cdot (0,391 - 0,296) = 6,65\; \textup{МВар}\]
 \[N_\textup{БСК1}^\textup{треб} = \frac{Q_\textup{БСК1}^\textup{треб}}{1,2} = \frac{6,65}{1,2} = 5,54 \rightarrow N_\textup{БСК1} = 6\]
 
-Результаты расчета для варианта схемы сети 1 сведем в таблицу \ref{tab:нагрузки_с_батареями_кольцо}
+Результаты расчета для варианта схемы сети 1 сведем в таблицу \ref{tab:нагрузки_с_батареями_кольцо}.
 
 \begin{table}[H]
 	\small
@@ -225,7 +225,7 @@ Q_{\textup{БСК}i}^{\textup{треб}} = P_{\textup{нб}i}\cdot (\tg\, \varph
 Суммарное значение разности потерь реактивной мощности в сопротивлениях линий и зарядной мощности линии (без учета ВЛ 4-5):
 \[\sum_{j=1}^{4} (\Delta Q_{\textup{л}j} - Q_{cj}) = 23,7 - 30,4 = -6,70\; \textup{МВар}\]
 
-По формуле \eqref{eqn:sum_q_treb} определим суммарную реактивную мощность, потребляемую в проектируемой сети::
+По формуле \eqref{eqn:sum_q_treb} определим суммарную реактивную мощность, потребляемую в проектируемой сети:
 \[Q_{\textup{треб}\Sigma} = k_{\textup{одн}Q} \cdot \sum_{i=1}^{5} Q_{\textup{нб}i} + \Delta Q_{\textup{т}\Sigma} + \sum_{j=1}^{4}\left(\Delta Q_{\textup{л}j} - Q_{cj}\right) =\] \[= 93,5 + 33,5 - 6,70 = 120,3\; \textup{МВар}\]
 
 Так как \(Q_{\textup{треб}\Sigma} = 120,3\; \textup{МВар} > Q_{\textup{расп}\Sigma} = 87\; \textup{МВар}\), то в сети требуется установка дополнительных БСК по условию баланса реактивной мощности.
@@ -247,7 +247,7 @@ Q_{\textup{БСК}i}^{\textup{треб}} = P_{\textup{нб}i}\cdot (\tg\, \varph
 \[Q_\textup{БСК1} = N_\textup{БСК1} \cdot 1,2 = 8 \cdot 1,2 = 9,6\; \textup{МВар}\]
 \[Q_\textup{нб1}^{''} = Q_\textup{нб1}^{'} - Q_\textup{БСК1} = 27,4 - 9,6 = 17,8\; \textup{МВар}\]
 
-Результаты расчета для варианта схемы сети 2 сведем в таблицу \ref{tab:брм_батареи_2}
+Результаты расчета для варианта схемы сети 2 сведем в таблицу \ref{tab:брм_батареи_2}.
 
 \begin{table}[h]
 	\small
