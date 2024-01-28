@@ -578,6 +578,42 @@
     ]
   }}{}
 
+  % Использовать шрифты liberation
+  \IfStrEq{\Gost@fonts}{liberation}{
+  % Основной шрифт
+  \IfNoFont{Liberation Serif}{
+    \@latex@warning{\Gost@Font@Warning{Liberation Serif}}
+    \Gost@use@cm@main
+  }{
+    \setmainfont{Liberation Serif}
+    \newfontfamily\cyrillicfont{Liberation Serif}[Script = Cyrillic] % для кириллицы
+  }
+
+  % Шрифт без засечек
+  \IfNoFont{Leberation Sans}{
+    \@latex@warning{\Gost@Font@Warning{Leberation Sans}}
+    \Gost@use@cm@sans
+  }{
+    \setsansfont{Liberation Sans}
+    \newfontfamily\cyrillicfontsf{Liberation Sans}[Script = Cyrillic] % для кириллицы
+  }
+
+  % Моноширинный шрифт
+  \IfNoFont{Liberation Mono}{
+    \@latex@warning{\Gost@Font@Warning{Liberation Mono}}
+    \Gost@use@cm@mono
+  }{
+    \setmonofont{Liberation Mono}
+    \newfontfamily\cyrillicfonttt{Liberation Mono}[Script = Cyrillic] % для кириллицы
+    % Шрифт для minted
+    \defaultfontfeatures{}
+    \newfontfamily\cyrillicfontttnoftr{Liberation Mono}[
+    Script = Cyrillic,
+    NFSSFamily = cyrillicfontttnoftr
+    ]
+  }}{}
+
+
   % Использовать шрифты cm
   \IfStrEq{\Gost@fonts}{cm}{
     \Gost@use@cm@main
@@ -678,6 +714,7 @@
 
 \RequirePackage{amssymb} % для русских "меньше или равно" "больше или равно"
 \RequirePackage{amsmath} % Пусть сразу будет, какой НИР без него -- Коротков И.
+\RequirePackage[varg]{txfonts} % Математический шрифт, похожий на times
 \RequirePackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
 \input{leqno.clo}       % Equation numeration
 
