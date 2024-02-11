@@ -44,3 +44,4 @@ build
 calculations/.ipynb_checkpoints
 *.rg2
 *.anc
+.DS_store
